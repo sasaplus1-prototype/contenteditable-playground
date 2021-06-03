@@ -23,7 +23,7 @@
 
     //-----
 
-    editor.addEventListener('selectionchange', function(event) {
+    document.addEventListener('selectionchange', function(event) {
       console.log('selectionchange', document.getSelection());
     }, false);
 
