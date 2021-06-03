@@ -41,8 +41,17 @@
 
     //-----
 
+    // NOTE: trigger when move caret
     document.addEventListener('selectionchange', function(event) {
       console.log('selectionchange', document.getSelection());
+    }, false);
+
+    document.addEventListener('copy', function(event) {
+      console.log('copy', event);
+    }, false);
+
+    document.addEventListener('paste', function(event) {
+      console.log('paste', event);
     }, false);
 
     //-----
