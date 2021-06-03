@@ -23,6 +23,24 @@
 
     //-----
 
+    editor.addEventListener('keydown', function(event) {
+      console.log('keydown', event);
+    }, false);
+
+    editor.addEventListener('keypress', function(event) {
+      console.log('keypress', event);
+    }, false);
+
+    editor.addEventListener('keyup', function(event) {
+      console.log('keyup', event);
+    }, false);
+
+    editor.addEventListener('input', function(event) {
+      console.log('input', event);
+    }, false);
+
+    //-----
+
     document.addEventListener('selectionchange', function(event) {
       console.log('selectionchange', document.getSelection());
     }, false);
